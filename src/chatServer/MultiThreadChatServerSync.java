@@ -1,16 +1,20 @@
 package chatServer;
 
 import java.io.DataInputStream;
-import java.io.PrintStream;
 import java.io.IOException;
-import java.net.Socket;
+import java.io.PrintStream;
 import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 
 /*
  * A chat server that delivers public and private messages.
  */
 public class MultiThreadChatServerSync {
 
+	List <Member> members = new ArrayList<Member>();
+	
 	// The server socket.
 	private static ServerSocket serverSocket = null;
 	
