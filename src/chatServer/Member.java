@@ -8,6 +8,9 @@ public class Member {
 
 	
 	
+	public Member(){
+		
+	}
 	
 	
 	public Member(String userName, String passWord, String ip, int port) {
